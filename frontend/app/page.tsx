@@ -97,6 +97,73 @@ export default function HomePage() {
         </div>
       </main>
 
+      {/* ── Tech Stack Marquee ──────────────────────────────────────────── */}
+      <section className="tech-stack-section">
+        <div className="tech-stack-container">
+          <div className="tech-divider">
+            <span className="divider-line" />
+            <span className="font-mono tech-label">TECHNOLOGY STACK</span>
+            <span className="divider-line" />
+          </div>
+          
+          <div className="marquee-wrapper">
+            <div className="marquee-content">
+              {/* First set */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="tech-logo tech-logo-invert" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" className="tech-logo tech-logo-invert" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" alt="Rust" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="Electron" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" alt="MATLAB" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="tech-logo" />
+              
+              {/* Duplicate set for seamless loop */}
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="tech-logo tech-logo-invert" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" className="tech-logo tech-logo-invert" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" alt="Rust" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="Electron" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" alt="MATLAB" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" className="tech-logo" />
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="tech-logo" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ── Testimonial Section ─────────────────────────────────────────── */}
       <section id="testimonials" className="testimonial-section">
         <div className="testimonial-header">
@@ -321,6 +388,95 @@ export default function HomePage() {
         }
 
         /* Responsive */
+        /* ── Tech Stack Marquee ──────────────────────── */
+        .tech-stack-section {
+          max-width: 1600px;
+          margin: 0 auto;
+          padding: 80px var(--margin-desktop) 64px;
+          overflow: hidden;
+        }
+        .tech-stack-container {
+          display: flex;
+          flex-direction: column;
+          gap: 48px;
+        }
+        .tech-divider {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 24px;
+        }
+        .tech-label {
+          font-size: 11px;
+          font-weight: 500;
+          letter-spacing: 0.15em;
+          color: var(--primary-fixed-dim);
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+        
+        .marquee-wrapper {
+          position: relative;
+          width: 100%;
+          overflow: hidden;
+          background: radial-gradient(circle at center, rgba(233, 196, 0, 0.03) 0%, transparent 70%);
+          padding: 40px 0;
+        }
+        .marquee-wrapper::before,
+        .marquee-wrapper::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          width: 200px;
+          height: 100%;
+          z-index: 10;
+          pointer-events: none;
+        }
+        .marquee-wrapper::before {
+          left: 0;
+          background: linear-gradient(to right, var(--background) 0%, transparent 100%);
+        }
+        .marquee-wrapper::after {
+          right: 0;
+          background: linear-gradient(to left, var(--background) 0%, transparent 100%);
+        }
+        
+        @keyframes marquee-rtl {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        
+        .marquee-content {
+          display: flex;
+          gap: 64px;
+          animation: marquee-rtl 60s linear infinite;
+          will-change: transform;
+        }
+        .marquee-content:hover {
+          animation-play-state: paused;
+        }
+        
+        .tech-logo {
+          width: 56px;
+          height: 56px;
+          object-fit: contain;
+          filter: grayscale(100%) brightness(0.6);
+          opacity: 0.5;
+          transition: all 0.4s ease;
+          flex-shrink: 0;
+        }
+        .tech-logo:hover {
+          filter: grayscale(0%) brightness(1);
+          opacity: 1;
+          transform: scale(1.15);
+        }
+        .tech-logo-invert {
+          filter: grayscale(100%) brightness(0.6) invert(1);
+        }
+        .tech-logo-invert:hover {
+          filter: grayscale(0%) brightness(1) invert(1);
+        }
+
         @media (max-width: 900px) {
           .hero-grid {
             grid-template-columns: 1fr !important;
@@ -330,6 +486,17 @@ export default function HomePage() {
             padding-bottom: 96px !important;
           }
           .portrait-wrapper { order: -1; }
+          
+          .tech-stack-section {
+            padding: 48px var(--margin-mobile) 48px;
+          }
+          .marquee-content {
+            gap: 48px;
+          }
+          .tech-logo {
+            width: 48px;
+            height: 48px;
+          }
           
           .testimonial-section {
             padding: 32px var(--margin-mobile) 96px;

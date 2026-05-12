@@ -20,6 +20,18 @@ const projects = [
     link: "https://www.learnchain.live/",
     github: "https://github.com/omegaopinmthechat/blockchain_projects",
   },
+  {
+    id: "PRJ_002",
+    title: "Proctora — Examination Platform",
+    category: "MICROSERVICES · ENTERPRISE",
+    description:
+      "A subscription-based proctored examination platform built on microservices architecture. Features real-time monitoring, secure quiz delivery, distributed caching for performance optimization, and GraphQL/REST API integration for seamless data orchestration across services.",
+    stack: ["Microservices", "GraphQL", "REST API", "Redis", "PostgreSQL", "Node.js", "Docker"],
+    status: "IN PROGRESS",
+    year: "2024",
+    link: "https://www.proctora.in",
+    github: "",
+  },
 ];
 
 const statusColor: Record<string, string> = {
@@ -112,7 +124,7 @@ export default function ProjectsPage() {
                 <div className="card-footer">
                   <div className="footer-left">
                     <span className="font-mono card-year">{project.year}</span>
-                    {project.github && (
+                    {project.github && project.github.trim() && (
                       <a
                         href={project.github}
                         target="_blank"
