@@ -7,8 +7,8 @@ const navLinks = [
   { label: "HOME",         href: "/",          icon: "home"         },
   { label: "WORK HISTORY", href: "#work",       icon: "work_history" },
   { label: "PROJECTS",     href: "/projects",   icon: "folder_open"  },
-  { label: "ACADEMICS",    href: "#academics",  icon: "school"       },
-  { label: "CONTACT",      href: "#contact",    icon: "mail"         },
+  { label: "ACADEMICS",    href: "/academics",  icon: "school"       },
+  { label: "CONTACT",      href: "/contact",    icon: "mail"         },
 ];
 
 export default function Navbar() {

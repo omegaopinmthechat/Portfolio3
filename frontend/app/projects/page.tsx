@@ -20,56 +20,6 @@ const projects = [
     link: "https://www.learnchain.live/",
     github: "https://github.com/omegaopinmthechat/blockchain_projects",
   },
-  {
-    id: "PRJ_002",
-    title: "Multi-Region API Gateway",
-    category: "CLOUD INFRASTRUCTURE · API DESIGN",
-    description:
-      "A custom reverse-proxy and API gateway deployed across 3 cloud regions with sub-20ms failover. Features JWT validation, rate-limiting, request coalescing, and distributed tracing via OpenTelemetry.",
-    stack: ["Rust", "Nginx", "AWS Lambda", "DynamoDB", "Terraform"],
-    status: "PRODUCTION",
-    year: "2024",
-  },
-  {
-    id: "PRJ_003",
-    title: "Real-Time Collaborative IDE",
-    category: "FULL STACK · WEBSOCKETS",
-    description:
-      "A browser-based IDE with operational transformation for real-time multi-user code editing. Supports 20+ language runtimes via Docker sandbox isolation with live terminal sharing and AI-assisted completions.",
-    stack: ["Next.js", "Node.js", "WebSockets", "Monaco Editor", "Docker"],
-    status: "BETA",
-    year: "2023",
-  },
-  {
-    id: "PRJ_004",
-    title: "Blockchain Transaction Monitor",
-    category: "WEB3 · DATA ENGINEERING",
-    description:
-      "An on-chain analytics pipeline ingesting 2M+ daily transactions from Ethereum & Solana. Provides real-time wallet profiling, MEV detection, and smart contract interaction graphs using stream processing.",
-    stack: ["Python", "Apache Kafka", "ClickHouse", "GraphQL", "React"],
-    status: "ARCHIVED",
-    year: "2023",
-  },
-  {
-    id: "PRJ_005",
-    title: "Proctora — AI Proctoring Engine",
-    category: "AI · COMPUTER VISION",
-    description:
-      "A computer-vision proctoring system for online assessments. Detects gaze deviation, tab-switching, and face-substitution in real time using lightweight ONNX models, achieving <80ms inference latency.",
-    stack: ["Python", "FastAPI", "ONNX Runtime", "WebRTC", "Next.js"],
-    status: "IN PROGRESS",
-    year: "2025",
-  },
-  {
-    id: "PRJ_006",
-    title: "LifeLine AI — Doctor Portal",
-    category: "HEALTH TECH · WEBRTC",
-    description:
-      "A telemedicine platform for patient-doctor video consultations. Implements peer-to-peer WebRTC with TURN fallback, Firebase Auth, and Firestore-backed session management with HIPAA-aligned data policies.",
-    stack: ["Next.js", "Firebase", "WebRTC", "Twilio TURN", "TypeScript"],
-    status: "PRODUCTION",
-    year: "2024",
-  },
 ];
 
 const statusColor: Record<string, string> = {

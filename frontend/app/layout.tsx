@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   },
 };
 
+import InteractiveGrid from "./components/InteractiveGrid";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +29,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         />
       </head>
-      <body className="min-h-full flex flex-col blueprint-grid">
+      <body className="min-h-full flex flex-col">
+        <InteractiveGrid />
         {children}
       </body>
     </html>
