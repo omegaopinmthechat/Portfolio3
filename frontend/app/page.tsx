@@ -30,7 +30,7 @@ export default function HomePage() {
         }}>
 
           {/* ── Left: Text Content ──────────────────────────────────── */}
-          <div className="hero-text" style={{ display: "flex", flexDirection: "column", gap: "32px" }}>
+          <div className="hero-text" style={{ display: "flex", flexDirection: "column", gap: "32px", minWidth: 0 }}>
 
             {/* Status Badge */}
             <div id="status-badge" className="shimmer-border glass status-badge">
@@ -70,6 +70,70 @@ export default function HomePage() {
                 DOWNLOAD RESUME
               </a>
             </div>
+
+            {/* Tech Stack Marquee */}
+            <div className="tech-stack-section" style={{ marginTop: '3rem', paddingTop: '1.5rem', borderTop: '1px solid rgba(77, 71, 50, 0.2)', position: 'relative' }}>
+              <div style={{ marginBottom: '1rem' }}>
+                <span className="font-mono" style={{ fontSize: '11px', color: 'rgba(255, 225, 109, 0.6)', textTransform: 'uppercase', letterSpacing: '0.2em' }}>
+                  // SYSTEM_CAPABILITIES
+                </span>
+              </div>
+              <div className="marquee-container" style={{ width: '100%', padding: '1rem 0' }}>
+                <div className="marquee-content">
+                  <i className="devicon-react-original tech-logo" title="React.js"></i>
+                  <i className="devicon-nextjs-plain tech-logo" title="Next.js"></i>
+                  <i className="devicon-nodejs-plain tech-logo" title="Node.js"></i>
+                  <i className="devicon-express-original tech-logo" title="Express.js"></i>
+                  <i className="devicon-javascript-plain tech-logo" title="Javascript"></i>
+                  <i className="devicon-typescript-plain tech-logo" title="Typescript"></i>
+                  <i className="devicon-java-plain tech-logo" title="Java"></i>
+                  <i className="devicon-python-plain tech-logo" title="Python"></i>
+                  <i className="devicon-c-plain tech-logo" title="C"></i>
+                  <i className="devicon-cplusplus-plain tech-logo" title="C++"></i>
+                  <i className="devicon-rust-plain tech-logo" title="Rust"></i>
+                  <i className="devicon-mongodb-plain tech-logo" title="Mongodb"></i>
+                  <i className="devicon-postgresql-plain tech-logo" title="PostgreSql"></i>
+                  <i className="devicon-redis-plain tech-logo" title="Redis"></i>
+                  <i className="devicon-nginx-original tech-logo" title="Nginx"></i>
+                  <i className="devicon-docker-plain tech-logo" title="Docker"></i>
+                  <i className="devicon-kubernetes-plain tech-logo" title="Kubernetes"></i>
+                  <i className="devicon-electron-original tech-logo" title="Electron"></i>
+                  <i className="devicon-tauri-plain tech-logo" title="Tauri"></i>
+                  <i className="devicon-flutter-plain tech-logo" title="Flutter"></i>
+                  <i className="devicon-matlab-plain tech-logo" title="Matlab"></i>
+                  <i className="devicon-git-plain tech-logo" title="Git"></i>
+                  <i className="devicon-figma-plain tech-logo" title="Figma"></i>
+                  <i className="devicon-linux-plain tech-logo" title="Linux"></i>
+                  <i className="devicon-tailwindcss-original tech-logo" title="Tailwind"></i>
+                  {/* Duplicate for Seamless Marquee */}
+                  <i className="devicon-react-original tech-logo" title="React.js"></i>
+                  <i className="devicon-nextjs-plain tech-logo" title="Next.js"></i>
+                  <i className="devicon-nodejs-plain tech-logo" title="Node.js"></i>
+                  <i className="devicon-express-original tech-logo" title="Express.js"></i>
+                  <i className="devicon-javascript-plain tech-logo" title="Javascript"></i>
+                  <i className="devicon-typescript-plain tech-logo" title="Typescript"></i>
+                  <i className="devicon-java-plain tech-logo" title="Java"></i>
+                  <i className="devicon-python-plain tech-logo" title="Python"></i>
+                  <i className="devicon-c-plain tech-logo" title="C"></i>
+                  <i className="devicon-cplusplus-plain tech-logo" title="C++"></i>
+                  <i className="devicon-rust-plain tech-logo" title="Rust"></i>
+                  <i className="devicon-mongodb-plain tech-logo" title="Mongodb"></i>
+                  <i className="devicon-postgresql-plain tech-logo" title="PostgreSql"></i>
+                  <i className="devicon-redis-plain tech-logo" title="Redis"></i>
+                  <i className="devicon-nginx-original tech-logo" title="Nginx"></i>
+                  <i className="devicon-docker-plain tech-logo" title="Docker"></i>
+                  <i className="devicon-kubernetes-plain tech-logo" title="Kubernetes"></i>
+                  <i className="devicon-electron-original tech-logo" title="Electron"></i>
+                  <i className="devicon-tauri-plain tech-logo" title="Tauri"></i>
+                  <i className="devicon-flutter-plain tech-logo" title="Flutter"></i>
+                  <i className="devicon-matlab-plain tech-logo" title="Matlab"></i>
+                  <i className="devicon-git-plain tech-logo" title="Git"></i>
+                  <i className="devicon-figma-plain tech-logo" title="Figma"></i>
+                  <i className="devicon-linux-plain tech-logo" title="Linux"></i>
+                  <i className="devicon-tailwindcss-original tech-logo" title="Tailwind"></i>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* ── Right: Portrait Card ─────────────────────────────────── */}
@@ -97,72 +161,7 @@ export default function HomePage() {
         </div>
       </main>
 
-      {/* ── Tech Stack Marquee ──────────────────────────────────────────── */}
-      <section className="tech-stack-section">
-        <div className="tech-stack-container">
-          <div className="tech-divider">
-            <span className="divider-line" />
-            <span className="font-mono tech-label">TECHNOLOGY STACK</span>
-            <span className="divider-line" />
-          </div>
-          
-          <div className="marquee-wrapper">
-            <div className="marquee-content">
-              {/* First set */}
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="tech-logo tech-logo-invert" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" className="tech-logo tech-logo-invert" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" alt="Rust" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="Electron" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" alt="MATLAB" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="tech-logo" />
-              
-              {/* Duplicate set for seamless loop */}
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="tech-logo tech-logo-invert" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" className="tech-logo tech-logo-invert" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" alt="Rust" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" alt="Electron" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg" alt="MATLAB" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" className="tech-logo" />
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" className="tech-logo" />
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* ── Testimonial Section ─────────────────────────────────────────── */}
       <section id="testimonials" className="testimonial-section">
@@ -265,6 +264,7 @@ export default function HomePage() {
         .portrait-card {
           position: relative; z-index: 1;
           width: 100%; aspect-ratio: 3/4;
+          max-width: 400px;
           background: rgba(42,42,42,0.8);
           backdrop-filter: blur(12px);
           -webkit-backdrop-filter: blur(12px);
@@ -390,91 +390,38 @@ export default function HomePage() {
         /* Responsive */
         /* ── Tech Stack Marquee ──────────────────────── */
         .tech-stack-section {
-          max-width: 1600px;
-          margin: 0 auto;
-          padding: 80px var(--margin-desktop) 64px;
-          overflow: hidden;
+          background-image: radial-gradient(circle, rgba(233, 196, 0, 0.1) 1px, transparent 1px);
+          background-size: 16px 16px;
         }
-        .tech-stack-container {
-          display: flex;
-          flex-direction: column;
-          gap: 48px;
-        }
-        .tech-divider {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 24px;
-        }
-        .tech-label {
-          font-size: 11px;
-          font-weight: 500;
-          letter-spacing: 0.15em;
-          color: var(--primary-fixed-dim);
-          text-transform: uppercase;
-          white-space: nowrap;
-        }
-        
-        .marquee-wrapper {
-          position: relative;
-          width: 100%;
-          overflow: hidden;
-          background: radial-gradient(circle at center, rgba(233, 196, 0, 0.03) 0%, transparent 70%);
-          padding: 40px 0;
-        }
-        .marquee-wrapper::before,
-        .marquee-wrapper::after {
-          content: '';
-          position: absolute;
-          top: 0;
-          width: 200px;
-          height: 100%;
-          z-index: 10;
-          pointer-events: none;
-        }
-        .marquee-wrapper::before {
-          left: 0;
-          background: linear-gradient(to right, var(--background) 0%, transparent 100%);
-        }
-        .marquee-wrapper::after {
-          right: 0;
-          background: linear-gradient(to left, var(--background) 0%, transparent 100%);
-        }
-        
-        @keyframes marquee-rtl {
+        @keyframes marquee {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
         }
-        
+        .marquee-container {
+          overflow: hidden;
+          white-space: nowrap;
+          mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+          -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        }
         .marquee-content {
-          display: flex;
-          gap: 64px;
-          animation: marquee-rtl 60s linear infinite;
-          will-change: transform;
+          display: inline-flex;
+          gap: 4rem;
+          animation: marquee 40s linear infinite;
+          width: max-content;
         }
         .marquee-content:hover {
           animation-play-state: paused;
         }
-        
         .tech-logo {
-          width: 56px;
-          height: 56px;
-          object-fit: contain;
-          filter: grayscale(100%) brightness(0.6);
-          opacity: 0.5;
-          transition: all 0.4s ease;
-          flex-shrink: 0;
+          font-size: 2.5rem;
+          color: var(--on-surface-variant, #d0c6ab);
+          opacity: 0.6;
+          transition: all 0.3s ease;
         }
         .tech-logo:hover {
-          filter: grayscale(0%) brightness(1);
           opacity: 1;
-          transform: scale(1.15);
-        }
-        .tech-logo-invert {
-          filter: grayscale(100%) brightness(0.6) invert(1);
-        }
-        .tech-logo-invert:hover {
-          filter: grayscale(0%) brightness(1) invert(1);
+          color: var(--primary-fixed, #ffe16d);
+          transform: scale(1.1);
         }
 
         @media (max-width: 900px) {
@@ -486,17 +433,6 @@ export default function HomePage() {
             padding-bottom: 96px !important;
           }
           .portrait-wrapper { order: -1; }
-          
-          .tech-stack-section {
-            padding: 48px var(--margin-mobile) 48px;
-          }
-          .marquee-content {
-            gap: 48px;
-          }
-          .tech-logo {
-            width: 48px;
-            height: 48px;
-          }
           
           .testimonial-section {
             padding: 32px var(--margin-mobile) 96px;
