@@ -148,8 +148,8 @@ export default function HomeClient() {
                 className="marquee-container"
                 style={{ width: "100%", padding: "1rem 0" }}
               >
-                <div className="marquee-content">
-                  {[
+                {(() => {
+                  const icons: [string, string][] = [
                     ["devicon-react-original", "React.js"],
                     ["devicon-nextjs-plain", "Next.js"],
                     ["devicon-nodejs-plain", "Node.js"],
@@ -175,12 +175,18 @@ export default function HomeClient() {
                     ["devicon-figma-plain", "Figma"],
                     ["devicon-linux-plain", "Linux"],
                     ["devicon-tailwindcss-original", "Tailwind"],
-                  ].flatMap(([cls, title]) =>
-                    [0, 1].map((d) => (
-                      <i key={`${cls}-${d}`} className={`${cls} tech-logo`} title={title} />
-                    ))
-                  )}
-                </div>
+                  ];
+                  const track = (prefix: string) =>
+                    icons.map(([cls, title]) => (
+                      <i key={`${prefix}-${cls}`} className={`${cls} tech-logo`} title={title} />
+                    ));
+                  return (
+                    <div className="marquee-content">
+                      <div className="marquee-track">{track("a")}</div>
+                      <div className="marquee-track" aria-hidden="true">{track("b")}</div>
+                    </div>
+                  );
+                })()}
               </div>
             </div>
           </div>
@@ -514,11 +520,15 @@ export default function HomeClient() {
           -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
         }
         .marquee-content {
-          display: inline-flex; gap: 4rem;
-          animation: marquee 40s linear infinite;
+          display: flex;
           width: max-content;
         }
-        .marquee-content:hover { animation-play-state: paused; }
+        .marquee-track {
+          display: inline-flex; gap: 4rem;
+          animation: marquee 40s linear infinite;
+          padding-right: 4rem;
+        }
+        .marquee-track:hover { animation-play-state: paused; }
         .tech-logo {
           font-size: 2.5rem;
           color: var(--on-surface-variant, #d0c6ab);
