@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -28,15 +29,16 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         />
-        <link 
-          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" 
-          rel="stylesheet" 
+        <link
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+          rel="stylesheet"
           type="text/css"
         />
       </head>
       <body className="min-h-full flex flex-col">
         <InteractiveGrid />
         {children}
+        <Analytics />
       </body>
     </html>
   );
