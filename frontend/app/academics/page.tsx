@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   description: "Academic history and qualifications of Amar Sankar Maitra.",
 };
 
+// changing a small thing so that i can see how the vercel is interacting with the terminal
 export default function AcademicsPage() {
   return (
     <>
