@@ -6,7 +6,7 @@ import Image from "next/image";
 import Navbar from "./components/Navbar";
 
 const PORTRAIT_URL =
-  "https://res.cloudinary.com/ddsx7wlkq/image/upload/v1778583423/my_image_bgchanged_kdk5ab.png";
+  "https://res.cloudinary.com/dlsjkss7j/image/upload/v1781761047/Gemini_Generated_Image_y5va83y5va83y5va_hmv1d6.png";
 
 export default function HomeClient() {
   const [loading, setLoading] = useState(true);
@@ -80,10 +80,18 @@ export default function HomeClient() {
           {/* ── Left: Text Content ──────────────────────────────────── */}
           <div
             className="hero-text"
-            style={{ display: "flex", flexDirection: "column", gap: "32px", minWidth: 0 }}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "32px",
+              minWidth: 0,
+            }}
           >
             {/* Status Badge */}
-            <div id="status-badge" className="shimmer-border glass status-badge">
+            <div
+              id="status-badge"
+              className="shimmer-border glass status-badge"
+            >
               <span className="pulse-gold status-dot" />
               <span className="font-mono status-label">
                 SYSTEM ARCHITECT &amp; BACKEND DEVELOPER
@@ -92,21 +100,29 @@ export default function HomeClient() {
 
             {/* Name */}
             <h1 className="font-montserrat hero-name">
-              AMAR SANKAR<br />
+              AMAR SANKAR
+              <br />
               <span className="name-dim">MAITRA</span>
             </h1>
 
             {/* Body */}
             <p className="font-inter hero-body">
-              Engineering scalable, high-performance backend systems with architectural
-              precision. Specializing in distributed networks, cloud infrastructure, and
-              robust API design tailored for enterprise environments.
+              Engineering scalable, high-performance backend systems with
+              architectural precision. Specializing in distributed networks,
+              cloud infrastructure, and robust API design tailored for
+              enterprise environments.
             </p>
 
             {/* CTAs */}
             <div className="cta-row">
-              <Link href="/projects" id="cta-view-projects" className="btn-primary">
-                <span className="material-symbols-outlined btn-icon">terminal</span>
+              <Link
+                href="/projects"
+                id="cta-view-projects"
+                className="btn-primary"
+              >
+                <span className="material-symbols-outlined btn-icon">
+                  terminal
+                </span>
                 VIEW PROJECTS
               </Link>
               <a
@@ -116,7 +132,9 @@ export default function HomeClient() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="material-symbols-outlined btn-icon">download</span>
+                <span className="material-symbols-outlined btn-icon">
+                  download
+                </span>
                 DOWNLOAD RESUME
               </a>
             </div>
@@ -178,12 +196,18 @@ export default function HomeClient() {
                   ];
                   const track = (prefix: string) =>
                     icons.map(([cls, title]) => (
-                      <i key={`${prefix}-${cls}`} className={`${cls} tech-logo`} title={title} />
+                      <i
+                        key={`${prefix}-${cls}`}
+                        className={`${cls} tech-logo`}
+                        title={title}
+                      />
                     ));
                   return (
                     <div className="marquee-content">
                       <div className="marquee-track">{track("a")}</div>
-                      <div className="marquee-track" aria-hidden="true">{track("b")}</div>
+                      <div className="marquee-track" aria-hidden="true">
+                        {track("b")}
+                      </div>
                     </div>
                   );
                 })()}
@@ -198,7 +222,9 @@ export default function HomeClient() {
             <div id="portrait-card" className="shimmer-border portrait-card">
               {/* Label */}
               <div className="portrait-label">
-                <span className="font-mono portrait-label-text">SRC_ID: PORTRAIT_01</span>
+                <span className="font-mono portrait-label-text">
+                  SRC_ID: PORTRAIT_01
+                </span>
               </div>
 
               {/* Next/Image fill — triggers onLoad reliably */}
@@ -236,14 +262,18 @@ export default function HomeClient() {
               <div className="profile-img-wrapper">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://res.cloudinary.com/ddsx7wlkq/image/upload/v1778585231/image_kpftp8.jpg"
+                  src="https://res.cloudinary.com/dlsjkss7j/image/upload/v1781761261/image_lmrab0.jpg"
                   alt="Cherukuri Lohit"
                   className="profile-img"
                 />
               </div>
               <div className="profile-info">
-                <h3 className="font-montserrat profile-name">Cherukuri Lohit</h3>
-                <p className="font-mono profile-role">Founder &amp; CEO @OnlyClick</p>
+                <h3 className="font-montserrat profile-name">
+                  Cherukuri Lohit
+                </h3>
+                <p className="font-mono profile-role">
+                  Founder &amp; CEO @OnlyClick
+                </p>
               </div>
             </div>
 
@@ -255,28 +285,33 @@ export default function HomeClient() {
                 format_quote
               </span>
               <blockquote className="font-inter testimonial-text">
-                &ldquo;I had the pleasure of working with Amar Sankar during his time as an intern
-                at Only Click, and I can genuinely say he made a real impact on our mobile app
-                development. For a sophomore still early in his Computer Science journey, Amar
-                brought an impressive level of skill and enthusiasm to the table. Amar dove into
-                our full tech stack—React Native for the mobile app, React.js and Next.js for our
-                web platform, plus Node.js and Express.js on the backend. He picked up Supabase,
-                SQL, and PostgreSQL quickly and handled our database work with confidence. What
-                really stood out was how fast he learned and how well he applied that knowledge to
-                actual problems.
+                &ldquo;I had the pleasure of working with Amar Sankar during his
+                time as an intern at Only Click, and I can genuinely say he made
+                a real impact on our mobile app development. For a sophomore
+                still early in his Computer Science journey, Amar brought an
+                impressive level of skill and enthusiasm to the table. Amar dove
+                into our full tech stack—React Native for the mobile app,
+                React.js and Next.js for our web platform, plus Node.js and
+                Express.js on the backend. He picked up Supabase, SQL, and
+                PostgreSQL quickly and handled our database work with
+                confidence. What really stood out was how fast he learned and
+                how well he applied that knowledge to actual problems.
                 <br />
                 <br />
-                Beyond just writing code, Amar had this knack for understanding what we were trying
-                to build and finding smart ways to make it happen. He was reliable, communicated
-                well with the team, and didn&apos;t shy away from tackling tough challenges. Several
-                features in the Only Click app wouldn&apos;t be what they are today without his
-                contributions.
+                Beyond just writing code, Amar had this knack for understanding
+                what we were trying to build and finding smart ways to make it
+                happen. He was reliable, communicated well with the team, and
+                didn&apos;t shy away from tackling tough challenges. Several
+                features in the Only Click app wouldn&apos;t be what they are
+                today without his contributions.
                 <br />
                 <br />
-                Amar&apos;s got solid technical chops with the MERN stack and modern development
-                tools, but more importantly, he&apos;s got the right attitude—curious, hardworking,
-                and a great team player. Any team would be lucky to have him, and I&apos;d recommend
-                him without hesitation for software engineering opportunities.&rdquo;
+                Amar&apos;s got solid technical chops with the MERN stack and
+                modern development tools, but more importantly, he&apos;s got
+                the right attitude—curious, hardworking, and a great team
+                player. Any team would be lucky to have him, and I&apos;d
+                recommend him without hesitation for software engineering
+                opportunities.&rdquo;
               </blockquote>
             </div>
           </div>
